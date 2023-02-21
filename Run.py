@@ -181,26 +181,7 @@ def menu_apikey():
   os.system('xdg-open https://www.facebook.com/profile.php?id=100032851461781')
   print("");time.sleep(2)
   print("\x1b[0;34m  CHECKING YOUR APROVAL.............                                                ");time.sleep (0.5)
-  try:
-    httpCaht = requests.get("https://raw.githubusercontent.com/Purn0h4x0r/pro-tool/main/Premium.txt").text
-    if id in httpCaht:
-      print("\033[1;92m   YOUR KEY APROVED  ");time.sleep(2)
-      msg = str(os.geteuid())
-      time.sleep(0.5)
-      pass
-    else:
-      
-      print("\x1b[1;92m    Sorry Bro Your Key not Aproved ")
-      print("    Send payment to Admin and get aproval"); time.sleep(2)
-      os.system('xdg-open https://wa.me/+8801756462587?text='+id)
-      time.sleep(2)
-      sys.exit()
-  except:
-    sys.exit()
-    if name == '__main__':
-    	print(logo)
-    	menu_apikey()
-#menu_apikey()
+
 logo=("""\033[92;1m
 
 
@@ -296,10 +277,10 @@ def x():
 	user=[]
 	os.system('clear')
 	print(logo)
-	print(" 𝐒𝐢𝐦 𝐜𝐨𝐝𝐞 𝐄𝐱𝐚𝐦𝐩𝐥𝐞 : 016, 017, 018, 019")
-	kode = input(' [★] 𝐄𝐧𝐭𝐞𝐫 𝐬𝐢𝐦 𝐜𝐨𝐝𝐞: ')
-	doamin = ' 𝐁𝐃 𝐍𝐮𝐦𝐛𝐞𝐫 𝐜𝐥𝐨𝐧𝐞𝐫 '
-	limit = int(input('[?] 𝐇𝐨𝐰 𝐦𝐚𝐧𝐲 𝐧𝐮𝐦𝐛𝐞𝐫𝐬 𝐝𝐨 𝐲𝐨𝐮 𝐰𝐚𝐧𝐭 𝐭𝐨 𝐚𝐝𝐝 : '))
+	print(" Sim Code Example: 016, 017, 018, 019")
+	kode = input(' [★] Enter sim code: ')
+	doamin = ' BD Number Cloner '
+	limit = int(input('[?] How many numbers do you want to add: '))
 	for nmbr in range(limit):
 		nmp = ''.join(random.choice(string.digits) for _ in range(8))
 		user.append(nmp)
